@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div class="detail_cot" id="detailTab_tl">
+        <ul class="detail_list">
+            <li title="康帝">
+                <p>
+                    <span>年份：1990</span>
+                </p>
+            </li>
+            <li title="拉菲">
+                <p>
+                    <span>年份：2010</span>
+                </p>
+            </li>
+        </ul>
+    <div>
+    <script src="jquery-1.12.3.min.js"></script>
+    <script type="text/javascript">
+
+    $(function () {
+        $("#detailTab_tl ul li").eq(1).find("span").css({"background":"red"});
+        console.log($("#detailTab_tl ul li").eq(1).find("span").html())
+    })
+
+
+</script>
+</body>
+</html>
