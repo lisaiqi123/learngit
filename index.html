@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no">
+    <title>爱鲜蜂</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/home/home.css">
+    <link rel="stylesheet" href="css/home/search_food.css">
+    <link rel="stylesheet" href="css/home/crazy_spike.css">
+    <link rel="stylesheet" href="css/supermarket/supermarket.css">
+    <link rel="stylesheet" href="css/fresh_reservation/fresh_reservation.css">
+    <link rel="stylesheet" href="css/myOrder/myOrder.css">
+    <link rel="stylesheet" href="css/myOrder/view_order.css">
+    <link rel="stylesheet" href="css/myOrder/integral_exchange.css">
+    <link rel="stylesheet" href="css/myOrder/registOrLogin.css">
+    <link rel="stylesheet" href="css/shopping/shopping.css">
+    <link rel="stylesheet" href="css/swiper-3.4.0.min.css">
+    <script src="js/rem.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-route.min.js"></script>
+    <script src="js/jquery-1.12.3.min.js"></script>
+</head>
+<body>
+<div class="loading">
+</div>
+<div ng-app="myApp" ng-controller="myCtrl">
+    <div class="content" ng-view="">
+    </div>
+    <div class="footer">
+        <ul id="navigation">
+            <li ng-click="menuClick(0)"><a href="#/"><div class="home1 home_menu"><img src="img/img1/tab-icon0.png"/></div><span>首页</span></a></li>
+            <li ng-click="menuClick(1)"><a href="#/supermarket"><div class="home2 home_menu"><img src="img/img1/tab-icon1.png"/></div><span>闪购超市</span></a></li>
+            <li ng-click="menuClick(2)"><a href="#/fresh_reservation"><div class="home3 home_menu"><img src="img/img1/tab-icon2.png"/></div><span>新鲜预订</span></a></li>
+            <li ng-click="menuClick(3)">
+                <a href="#/shopping">
+                    <div class="home4 home_menu">
+                        <img src="img/img1/tab-icon3.png"/>
+                    </div>
+                    <span>购物车</span>
+                </a>
+                <p class="orderNum">{{ orderNum }}</p>
+            </li>
+            <li ng-click="menuClick(4)"><a href="#/myOrder"><div class="home5 home_menu"><img src="img/img1/tab-icon4.png"/></div><span>我的</span></a></li>
+        </ul>
+    </div>
+</div>
+</body>
+<script src="js/swiper-3.4.0.min.js"></script>
+<script src="js/index.js"></script>
+<script src="js/home/home.js"></script>
+<script src="js/home/crazy_spike.js"></script>
+<script src="js/home/search_food.js"></script>
+<script src="js/supermarket/supermarket.js"></script>
+<script src="js/fresh_reservation/fresh_reservation.js"></script>
+<script src="js/shopping/shopping.js"></script>
+<script src="js/myOrder/myOrder.js"></script>
+<script src="js/myOrder/view_order.js"></script>
+<script src="js/myOrder/integral_exchange.js"></script>
+<script src="js/myOrder/registOrLogin.js"></script>
+</html>
